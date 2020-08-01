@@ -1,0 +1,28 @@
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li span {
+    font-weight: bold;
+}
+
+article {
+    padding-inline-start: 40px;
+}
+
+form .row {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    margin-bottom: 12px;
+}
+
+form label, form input {
+    font-size: 20px;
+}
