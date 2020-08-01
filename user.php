@@ -1,14 +1,9 @@
 <?php
-    require("lib/functions.php");
+    require("lib/init.php");
+
+    $username = checkLoggedInUser($smarty);
 
     $smarty->assign("current_page", "user");
-
-    $isUserLoggedIn = "No";
-    $username = "";
-    if (isset($_COOKIE["isloggedin"])) {
-        $isUserLoggedIn = "Yes";
-        $username = $_COOKIE["isloggedin"];
-    }
 
     $smarty->display("templates/user.tpl");
 ?>

@@ -1,4 +1,4 @@
 <?php
 // delete cookie
-setcookie("isloggedin","",time()-1);
+setcookie("logged_in_user","",time()-1);
 header("Location: .");

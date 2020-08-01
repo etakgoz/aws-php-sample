@@ -1,8 +1,14 @@
 <nav>
+    {if $is_user_logged_in eq true}
     <ul>
-        <li>{if $current_page eq "index"}<span>Home</span>{else}<a href='./index.php'>Home</a>{/if}</li>
-        <li>{if $current_page eq "user"}<span>User</span>{else}<a href='./user.php'>User</a>{/if}</li>
-        <li>{if $current_page eq "login"}<span>Login</span>{else}<a href='./login.php'>Login</a>{/if}</li>
-        <li><a href="logout.php">Logout</a></li>
+        <li>{if $current_page eq "index"}<span>Home</span>{else}<a href="{$abs_app_url}">Home</a>{/if}</li>
+        <li>{if $current_page eq "user"}<span>User</span>{else}<a href='{$abs_app_url}/user'>User</a>{/if}</li>
+        <li><a href="{$abs_app_url}/logout">Logout</a></li>
     </ul>
+    {else}
+    <ul>
+        <li>{if $current_page eq "index"}<span>Home</span>{else}<a href="{$abs_app_url}">Home</a>{/if}</li>
+        <li>{if $current_page eq "login"}<span>Login</span>{else}<a href="{$abs_app_url}/login">Login</a>{/if}</li>
+    </ul>
+    {/if}
 </nav>
