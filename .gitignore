@@ -5,3 +5,7 @@
 # Ignore contents of the template cache directory
 templates_c/*
 !templates_c/.gitkeep
+
+# Ignore configs
+configs/*
+!configs/.gitkeep

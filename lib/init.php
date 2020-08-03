@@ -1,6 +1,5 @@
 <?php
-define("ABS_APP_PATH", "/Users/tolga/Sites/aws-php-sample");
-define("ABS_APP_URL", "https://localhost/aws-php-sample");
+require_once(dirname(__FILE__).'/../configs/config.php');
 
 
 // Setup smarty
