@@ -1,9 +1,8 @@
 <?php
-    require("lib/init.php");
+require("lib/init.php");
 
-    $username = checkLoggedInUser($smarty);
+$username = checkLoggedInUser($smarty);
 
-    $smarty->assign("current_page", "article");
+$smarty->assign("current_page", "article");
 
-    $smarty->display("templates/article.tpl");
-?>
+$smarty->display("templates/article.tpl");
