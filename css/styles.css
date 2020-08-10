@@ -26,3 +26,9 @@ form .row {
 form label, form input {
     font-size: 20px;
 }
+
+.dl-item {
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+}
