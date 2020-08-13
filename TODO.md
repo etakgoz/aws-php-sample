@@ -1,7 +1,7 @@
 #TODO
 
 1. Why does the errodocument redirection not work?
-2. Integrate memcached ==> and/or elasticache
+2. Integrate memcached ==> and/or elasticache (do something involving memcached)
 3. Use parameter store to for secret values: https://www.youtube.com/watch?v=3FUpyzc_raI&list=PLt1SIbA8guutb3Ih2uZ_9wS7dQVMRYaav&index=13
 
 Things I have done:
@@ -14,3 +14,4 @@ Things I have done:
     a. html folder naming required
     b. chown -R www-data:www-data required
 6. .htaccess and config.php need to created
+7. enabled modrewrite: sudo a2enmod rewrite

@@ -8,3 +8,7 @@ $smarty->assign("server_vars", $_SERVER);
 
 
 $smarty->display("templates/server.tpl");
+
+if (isset($_REQUEST['info'])) {
+    phpinfo();
+}
