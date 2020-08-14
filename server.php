@@ -12,3 +12,5 @@ $smarty->display("templates/server.tpl");
 if (isset($_REQUEST['info'])) {
     phpinfo();
 }
+
+print_r($_ENV);
