@@ -1,2 +1,2 @@
 # aws-php-sample
-Sample PHP App for testıng out EC2 features
+Sample PHP App for testing out EC2 features
